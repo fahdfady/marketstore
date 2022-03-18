@@ -1080,6 +1080,10 @@ a.dropdown-toggle * {
                 &:hover {
                     color: #d169f2;
                 }
+
+                html:lang(ar) & {
+                    direction: rtl;
+                }
             }
         }
 

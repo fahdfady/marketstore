@@ -864,6 +864,9 @@ a.dropdown-toggle * {
 .card.card-min a.btn-report:hover {
   color: #d169f2;
 }
+html:lang(ar) .card.card-min a.btn-report {
+  direction: rtl;
+}
 .card.card-min .heading {
   display: flex;
   justify-content: space-between;

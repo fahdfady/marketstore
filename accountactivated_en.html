@@ -16,7 +16,7 @@
     <link rel="icon" href="img/logo.webp">
 
     <title>
-        User settings
+        account activated
         -
         Store name
     </title>
@@ -160,66 +160,21 @@
 
             </div>
 
-            <div class="page-body" id="settings">
+            <div class="page-body" id="empty">
                 <div class="container">
-                    <div class="profilePhoto image">
-                        <img src="img/icons/Customer Ratings.png" alt="profile photo">
-                        <div class="wish layer">
-                            <input type="file" id="file" accept="image/png, image/gif, image/jpeg" hidden>
-                            <label for="file" class="fas fa-pen"></label>
+                    <div class="row g-3 py-5">
+                        <div class="col-md-7 col-lg-8 order-md-last justify-content-center">
+                            <div class="emptyicon text-muted">
+                                <i class="fas fa-clipboard-check"></i>
+                                <h2>Account is successfully activated</h2>
+                                <p>You can go to the home page and start browsing the products</p>
+                            </div>
+                            <a href="index.html" class="mt-4 btn ">
+                                <i class="fas fa-home"></i>
+                                Go to home page
+                            </a>
                         </div>
                     </div>
-                    <form action='#0' method="POST">
-
-                        <div class="input-group my-8">
-                            <input type="text" class="form-control edit-input" placeholder="old username">
-                            <input type="text" class="form-control edit-input" placeholder="old username">
-                        </div>
-
-                        <div class="input-group my-3">
-                            <input id="password" type="password" class="form-control  edit-input-email"
-                                placeholder="current password" name="passold">
-                        </div>
-                        <div class="input-group my-3">
-                            <input id="confirmPassword" type="password" class="form-control  edit-input-email"
-                                placeholder="new password" name="pass">
-                        </div>
-
-                        <div class="input-group my-3">
-                            <input id="email" type="email" class="form-control  edit-input-email"
-                                value="example@gmail.com" disabled>
-                        </div>
-                        <div class="input-group my-3">
-                            <input class="form-control" type="tel" placeholder="phone number" required>
-
-                            <select name="country_code" id="country_code" required>
-
-                                <option disabled selected>
-                                    choose country code
-                                </option>
-
-                                <option value="AF">
-                                    Afghanistan
-                                    (+93)
-                                </option>
-                                <option value="EG">
-                                    Egypt
-                                    (+20)
-                                </option>
-                                <option value="SA">
-                                    Saudi Arabia
-                                    (+966)
-
-                                </option>
-                            </select>
-                        </div>
-                        <div class="input-group my-3">
-                            <input id="email" type="text" class="form-control  edit-input-email"
-                                value="wallet balance : 200 EGP" disabled>
-                        </div>
-
-                        <input type="submit" value="save changes" class="btn button">
-                    </form>
                 </div>
             </div>
 
@@ -285,7 +240,7 @@
                         Made on the
                         <a href="#0">
                             Lucky Market
-                        </a>
+                        </a> 
                         platform
                     </span>
                 </p>

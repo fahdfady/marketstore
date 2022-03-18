@@ -16,7 +16,7 @@
     <link rel="icon" href="img/logo.webp">
 
     <title>
-        User settings
+        claim your product
         -
         Store name
     </title>
@@ -160,66 +160,75 @@
 
             </div>
 
-            <div class="page-body" id="settings">
+            <div class="page-body" id="empty">
                 <div class="container">
-                    <div class="profilePhoto image">
-                        <img src="img/icons/Customer Ratings.png" alt="profile photo">
-                        <div class="wish layer">
-                            <input type="file" id="file" accept="image/png, image/gif, image/jpeg" hidden>
-                            <label for="file" class="fas fa-pen"></label>
+                    <div class="steps-line">
+                        <div class="the-container">
+                            <div class="row no-margin checkout-steps">
+                                <div class="step-box">
+                                    <div class="step step-active">
+                                        <div class="step-number"><i class="fas fa-check"></i></div>
+                                        <div class="step-title">
+                                            cart
+                                        </div>
+                                    </div>
+                                    <div class="step step-active">
+                                        <div class="step-number"><i class="fas fa-check"></i></div>
+                                        <div class="step-title">
+                                            Choose Payment Method
+                                        </div>
+                                    </div>
+                                    <div class="step step-active">
+                                        <div class="step-number"><i class="fas fa-check"></i></div>
+                                        <div class="step-title">
+                                            Confirm payment
+                                        </div>
+                                    </div>
+                                    <div class="step step-active">
+                                        <div class="step-number"><i class="fas fa-check"></i></div>
+                                        <div class="step-title">
+                                            claim your product
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-line"></div>
+                            </div>
                         </div>
                     </div>
-                    <form action='#0' method="POST">
 
-                        <div class="input-group my-8">
-                            <input type="text" class="form-control edit-input" placeholder="old username">
-                            <input type="text" class="form-control edit-input" placeholder="old username">
+                    <div class="row g-3 py-4">
+                        <div class="col-md-5 col-lg-6 order-md-last">
+                            <div class="emptyicon text-muted">
+                                <i class="fas fa-gift"></i>
+                                <h2>payment done succesfully !</h2>
+                                <p>
+                                    we hope you are happy with our products
+                                </p>
+                                <p>
+                                    you can go to
+                                    <a href="boughtproducts.html">
+                                        "bought products"
+                                    </a>
+                                    page to know product details and give it a rating
+                                </p>
+
+                                <div class="order-id">
+                                    <p>
+                                        order code
+                                        <span>#231424</span>
+                                    </p>
+                                </div>
+                                <a href="boughtproducts.html" class="btn">
+                                    order details
+                                    <i class="fas fa-receipt"></i>
+                                </a>
+                            </div>
+                            <a href="index.html" class="mt-4 btn back-btn">
+                                go to home
+                                <i class="fas fa-home"></i>
+                            </a>
                         </div>
-
-                        <div class="input-group my-3">
-                            <input id="password" type="password" class="form-control  edit-input-email"
-                                placeholder="current password" name="passold">
-                        </div>
-                        <div class="input-group my-3">
-                            <input id="confirmPassword" type="password" class="form-control  edit-input-email"
-                                placeholder="new password" name="pass">
-                        </div>
-
-                        <div class="input-group my-3">
-                            <input id="email" type="email" class="form-control  edit-input-email"
-                                value="example@gmail.com" disabled>
-                        </div>
-                        <div class="input-group my-3">
-                            <input class="form-control" type="tel" placeholder="phone number" required>
-
-                            <select name="country_code" id="country_code" required>
-
-                                <option disabled selected>
-                                    choose country code
-                                </option>
-
-                                <option value="AF">
-                                    Afghanistan
-                                    (+93)
-                                </option>
-                                <option value="EG">
-                                    Egypt
-                                    (+20)
-                                </option>
-                                <option value="SA">
-                                    Saudi Arabia
-                                    (+966)
-
-                                </option>
-                            </select>
-                        </div>
-                        <div class="input-group my-3">
-                            <input id="email" type="text" class="form-control  edit-input-email"
-                                value="wallet balance : 200 EGP" disabled>
-                        </div>
-
-                        <input type="submit" value="save changes" class="btn button">
-                    </form>
+                    </div>
                 </div>
             </div>
 
@@ -285,7 +294,7 @@
                         Made on the
                         <a href="#0">
                             Lucky Market
-                        </a>
+                        </a> 
                         platform
                     </span>
                 </p>

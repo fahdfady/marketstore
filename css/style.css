@@ -1198,6 +1198,10 @@ a.dropdown-toggle * {
   color: #d169f2;
 }
 
+html:lang(ar) .card.card-min a.btn-report {
+  direction: rtl;
+}
+
 .card.card-min .heading {
   display: -webkit-box;
   display: -ms-flexbox;
