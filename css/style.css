@@ -144,6 +144,10 @@ input:focus {
           box-shadow: 0 0 0 0.25rem rgba(143, 56, 170, 0.35) !important;
 }
 
+input[type="file"] {
+  display: none;
+}
+
 .btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -209,6 +213,10 @@ body .page-body#login .banner .login-container {
 
 body .page-body#login .banner form {
   direction: rtl;
+}
+
+html:lang(en) body .page-body#login .banner form {
+  direction: ltr;
 }
 
 body .page-body#login .banner form .check {
@@ -1742,16 +1750,8 @@ html:lang(ar) .section-container {
   direction: rtl;
 }
 
-html:lang(ar) .section-container .section-header {
-  direction: ltr;
-}
-
 html:lang(en) .section-container {
   direction: ltr;
-}
-
-html:lang(en) .section-container .section-header {
-  direction: rtl;
 }
 
 html:lang(en) .section-container .section-header .section-title {

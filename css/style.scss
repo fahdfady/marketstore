@@ -163,6 +163,10 @@ input {
     }
 }
 
+input[type="file"] {
+    display: none;
+}
+
 .btn {
     width: fit-content;
     margin: auto;
@@ -222,6 +226,10 @@ body {
 
                 form {
                     direction: rtl;
+
+                    html:lang(en) & {
+                        direction: ltr;
+                    }
 
                     .check {
                         justify-content: flex-start;
@@ -1020,7 +1028,7 @@ a.dropdown-toggle * {
 
         .btn,
         .outofstock {
-            border: 1px solid ;
+            border: 1px solid;
 
             i {
                 order: -10;
@@ -1556,7 +1564,7 @@ img.bugs {
         direction: rtl;
 
         .section-header {
-            direction: ltr;
+            // direction: ltr;
         }
     }
 
@@ -1564,7 +1572,7 @@ img.bugs {
         direction: ltr;
 
         .section-header {
-            direction: rtl;
+            // direction: rtl;
 
             .section-title {
                 padding: 0px 16px 0px 0px;
