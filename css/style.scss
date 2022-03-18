@@ -691,6 +691,7 @@ body {
                 height: unset !important;
                 left: auto;
                 right: 0;
+                top: 100%;
                 display: block;
                 visibility: hidden;
                 opacity: 0;
@@ -887,11 +888,11 @@ a.dropdown-toggle * {
 
 .card {
     border: 1px solid #8c40a4ad;
-    padding: 0px;
+    padding: 0px !important;
     height: fit-content !important;
     margin: 10px;
     margin-bottom: 0.625rem;
-
+    max-width: 42%;
 
     .card-body {
         /* min-height: 300px; */
@@ -2561,7 +2562,13 @@ footer.page-footer {
 
     }
 
+    .section-container {
+        justify-content: space-evenly;
+    }
+
     .card {
+        margin: 2px;
+
         img {
             width: 100%;
             height: unset;

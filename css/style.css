@@ -711,6 +711,7 @@ html:lang(en) .page-header nav ul li {
   height: unset !important;
   left: auto;
   right: 0;
+  top: 100%;
   display: block;
   visibility: hidden;
   opacity: 0;
@@ -961,12 +962,13 @@ a.dropdown-toggle * {
 
 .card {
   border: 1px solid #8c40a4ad;
-  padding: 0px;
+  padding: 0px !important;
   height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
   height: fit-content !important;
   margin: 10px;
   margin-bottom: 0.625rem;
+  max-width: 42%;
 }
 
 .card .card-body {
@@ -2690,6 +2692,14 @@ footer.page-footer .copyrights {
   }
   form select {
     font-size: 14px;
+  }
+  .section-container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .card {
+    margin: 2px;
   }
   .card img {
     width: 100%;
