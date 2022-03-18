@@ -892,7 +892,10 @@ a.dropdown-toggle * {
     height: fit-content !important;
     margin: 10px;
     margin-bottom: 0.625rem;
-    max-width: 42%;
+
+    .page-body#home &{
+        max-width: 42%;
+    }
 
     .card-body {
         /* min-height: 300px; */

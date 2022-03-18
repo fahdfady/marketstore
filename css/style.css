@@ -968,6 +968,9 @@ a.dropdown-toggle * {
   height: fit-content !important;
   margin: 10px;
   margin-bottom: 0.625rem;
+}
+
+.page-body#home .card {
   max-width: 42%;
 }
 
