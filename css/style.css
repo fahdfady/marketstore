@@ -1712,9 +1712,9 @@ img.bugs {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .section-container .section-header .section-title {
@@ -1731,7 +1731,8 @@ img.bugs {
 }
 
 .section-container .section-header .section-title span {
-  margin-left: 5px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
 }
 
 .section-container .section-header .row {
@@ -1751,6 +1752,25 @@ img.bugs {
   z-index: -5;
 }
 
+.section-container .partition-header {
+  font-family: 'tajawal', sans-serif;
+}
+
+.section-container .partition-header::before {
+  height: 1px;
+  background-color: #aa3ecc;
+}
+
+.section-container .partition-header .partition-title {
+  font-size: 18px;
+  font-family: 'tajawal', sans-serif;
+  font-weight: 900;
+  color: #aa3ecc;
+  margin: unset;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
 .section-container .card {
   direction: ltr;
 }
@@ -1765,24 +1785,6 @@ html:lang(en) .section-container {
 
 html:lang(en) .section-container .section-header .section-title {
   padding: 0px 16px 0px 0px;
-}
-
-.partition-header {
-  font-family: 'tajawal', sans-serif;
-}
-
-.partition-header::before {
-  height: 1px;
-  background-color: #aa3ecc;
-}
-
-.partition-header .partition-title {
-  font-size: 18px;
-  font-family: 'tajawal', sans-serif;
-  font-weight: 900;
-  color: #aa3ecc;
-  margin: unset;
-  padding-right: 0px;
 }
 
 select {
