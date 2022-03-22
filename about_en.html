@@ -1,4 +1,4 @@
-<html lang="ar">
+<html lang="en">
 
 <!--
     google fonts (Kelly slab, Tajawal)
@@ -16,9 +16,9 @@
     <link rel="icon" href="img/logo.webp">
 
     <title>
-        تغيير كلمة المرور
+        About us
         -
-        اسم المتجر
+        Store name
     </title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,15 +60,14 @@
         </div>
 
         <a href="report.html" class="report-overlay overlay">
-            <img src="img/icons/illustrations/caution.png" alt="">
+            <img src="img/icons/illustrations/caution.png" alt="report">
         </a>
 
         <a href="../index.html" class="platform-overlay overlay">
-            <img src="img/icons/lucky-market.png" alt="">
+            <img src="img/icons/lucky-market.png" alt="lucky market">
         </a>
 
         <div class="not-footer">
-
             <div class="page-header">
 
                 <nav class="navbar navbar-expand-lg">
@@ -85,34 +84,36 @@
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                             <ul class="navbar-nav">
 
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">
-                                        <i class="fas fa-home"></i>
-                                        الرئيسية
-                                    </a>
-                                </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="login.html">
-                                        <i class="fas fa-user"></i>
-                                        تسجيل الدخول - تسجيل
+                                    <a class="nav-link" aria-current="page" href="index_en.html">
+                                        <i class="fas fa-home"></i>
+                                        Home
                                     </a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login_en.html">
+                                        <i class="fas fa-user"></i>
+                                        Login-Register
+                                    </a>
+                                </li>
+
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fas fa-language"></i>
-                                        اللغات
+                                        languages
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="langDropdown">
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li>
                                             <a class="dropdown-item" href="#">
-                                                <img src="img/icons/egypt.svg" alt="arabic">
+                                                <img src="img/icons/egypt.svg" alt="">
                                                 العربية
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="#">
-                                                <img src="img/icons/united-states.svg" alt="english">
+                                                <img src="img/icons/united-states.svg" alt="">
                                                 English
                                             </a>
                                         </li>
@@ -120,16 +121,16 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="img/icons/egypt.svg" alt="egypt">
                                         EGP
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
 
                                         <li>
                                             <a class="dropdown-item" href="#0">
-                                                <img src="img/icons/united-states.svg" alt="United States dollar">
+                                                <img src="img/icons/united-states.svg" alt="United-States-dollar">
                                                 USD
                                             </a>
                                         </li>
@@ -141,7 +142,7 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="#0">
-                                                <img src="img/icons/saudi-arabia.svg" alt="saudi arabia riyal">
+                                                <img src="img/icons/saudi-arabia.svg" alt="saudi-arabia">
                                                 SAR
                                             </a>
                                         </li>
@@ -159,33 +160,14 @@
 
             </div>
 
-            <div class="page-body simple-page" id="newpassword">
+            <div class="page-body simple-page" id="about">
                 <div class="container">
-                    <div class="m-auto">
-                        <div class="emptyicon text-muted">
-                            <i class="fas fa-lock"></i>
-
-                            <h2>برجاء كتابة كلمة السرالجديدة</h2>
-                        </div>
-
-                        <form action="" method="post">
-                            <div class="form-group">
-                                <input type="email" id="email" class="form-control" placeholder="* البريد الإلكتروني "
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" id="newPassword" class="form-control"
-                                    placeholder="* كلمة السر الجديدة " required>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" id="confirmPassword" class="form-control"
-                                    placeholder="* أكد كلمة السر الجديدة " required>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" class="btn" value="تأكيد" />
-                            </div>
-                        </form>
-                    </div>
+                    <h2>about us</h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, voluptas neque sapiente
+                        reiciendis distinctio debitis unde quas culpa aut! Esse pariatur commodi amet rem perspiciatis
+                        corporis fuga mollitia possimus eius.
+                    </p>
                 </div>
             </div>
 
@@ -195,8 +177,8 @@
             <div class="py-4">
 
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="about.html">من نحن</a></li>
-                    <li class="list-inline-item"><a href="license.html">شروط</a></li>
+                    <li class="list-inline-item"><a href="about.html">About Us</a></li>
+                    <li class="list-inline-item"><a href="license.html">Terms</a></li>
                     <li class="list-inline-item"><a href="dmca.html">DMCA</a></li>
                 </ul>
                 <ul class="social0media">
@@ -232,36 +214,32 @@
                     <img src="img/footer/visa_footer.png" alt="visa">
                 </li>
                 <li class="list-inline-item">
-                    <img src="img/footer/vodafonecash.png" alt="vodafonecash">
+                    <img src="img/footer/vodafonecash.png" alt="vodafone cash">
                 </li>
                 <li class="list-inline-item">
-                    <img src="img/footer/fawry-pay-english-logo-1.png" alt="fawry-pay">
+                    <img src="img/footer/fawry-pay-english-logo-1.png" alt="fawry pay">
                 </li>
-
                 <p class="my-1 copyrights">
                     <span>
-                        الحقوق محفوظة 2022
+                        Rights reserved 2022
                         &copy;
                         |
                     </span>
                     <span>
-                        اسم المتجر
+                        store name
                         |
                     </span>
                     <span>
-                        صنع على منصة
-
+                        Made on the
                         <a href="#0">
                             Lucky Market
                         </a>
+                        platform
                     </span>
                 </p>
             </ul>
 
-
         </footer>
-
-
     </div>
 
     <!-- Jquery -->

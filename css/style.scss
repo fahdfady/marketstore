@@ -151,6 +151,11 @@ html {
 .container {
     padding-top: 20px;
     padding-bottom: 20px;
+
+    &.add-review {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
 }
 
 .btn,
@@ -1000,7 +1005,7 @@ a.dropdown-toggle * {
 
     input {
         &.btn {
-            border: none !important;
+            border: none;
         }
     }
 
@@ -1524,6 +1529,7 @@ img.bugs {
 
 .section-container {
     justify-content: flex-start;
+    margin: 10px 0px;
 
     .section-header {
         position: relative;

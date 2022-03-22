@@ -131,6 +131,11 @@ html:lang(en) body {
   padding-bottom: 20px;
 }
 
+.container.add-review {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
 .btn,
 input {
   -webkit-transition: .11s all ease-in-out;
@@ -1102,7 +1107,7 @@ a.dropdown-toggle * {
 }
 
 .card input.btn {
-  border: none !important;
+  border: none;
 }
 
 .card .addtocart,
@@ -1701,6 +1706,7 @@ img.bugs {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 10px 0px;
 }
 
 .section-container .section-header {
