@@ -157,6 +157,13 @@ $(".wish.layer i").click(function () {
 $(".card .wish i").prop("title", "إضافة إلى قائمة المفضلة");
 
 
+// ?? add fade to modals
+let modal = document.querySelectorAll(".modal");
+
+for (let i = 0; i < modal.length; i++) {
+    modal[i].classList.add("fade");
+}
+
 // ?? changing error maassege in arabic
 $("html:lang(ar) input.form-control").attr("oninvalid", "this.setCustomValidity('إملأ هذا الحقل رجاءًا');");
 // returning it to default after typing again

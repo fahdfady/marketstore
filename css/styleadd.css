@@ -422,11 +422,6 @@ button.btn.input-group-text:hover {
     align-items: center;
 }
 
-.swiper.infoSlider {
-    max-width: 60%;
-    max-height: 100%;
-}
-
 .infoSlider .swiper-slide {
     /* width: 100% !important; */
 }
@@ -1242,7 +1237,6 @@ background: #88e669;
 }
 
 .card.card-min .card-title h5 {
-    width: 70%;
     order: -8;
     padding-right: 20px;
 }

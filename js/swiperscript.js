@@ -1,5 +1,5 @@
 // swiperjs START
-var swiper = new Swiper('.reviewSlider', {
+let swiper = new Swiper('.reviewSlider', {
     slidesPerView: 'auto',
     spaceBetween: 30,
     loop: true,
@@ -14,23 +14,37 @@ var swiper = new Swiper('.reviewSlider', {
     },
 });
 
-$(document).ready(function () {
-    $(".modal").on('show.bs.modal', function () {
-        setTimeout(function () {
-            var swiper2 = new Swiper('.infoSlider', {
+// $(document).ready(function () {
+//     $(".modal").on('show.bs.modal', function () {
+//         setTimeout(function () {
+//             let swiper2 = new Swiper('.infoSlider', {
 
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
+//                 loop: true,
+//                 navigation: {
+//                     nextEl: ".swiper-button-next",
+//                     prevEl: ".swiper-button-prev",
+//                 },
+//                 pagination: {
+//                     el: ".swiper-pagination",
+//                     clickable: true,
+//                 },
 
-            });
-        }, 500);
-    });
+//             });
+//         }, 500);
+//     });
+// });
+
+let swiper2 = new Swiper('.infoSlider', {
+
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
 });
 // swiperjs END

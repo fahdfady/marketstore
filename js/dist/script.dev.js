@@ -152,7 +152,14 @@ $(".wishlist .card .wish i").addClass("clicked");
 $(".wish.layer i").click(function () {
   $(this).toggleClass("clicked"); // $(".card .wish i.clicked").prop("title", "إزالة من قائمة الأماني");
 });
-$(".card .wish i").prop("title", "إضافة إلى قائمة المفضلة"); // ?? changing error maassege in arabic
+$(".card .wish i").prop("title", "إضافة إلى قائمة المفضلة"); // ?? add fade to modals
+
+var modal = document.querySelectorAll(".modal");
+
+for (var i = 0; i < modal.length; i++) {
+  modal[i].classList.add("fade");
+} // ?? changing error maassege in arabic
+
 
 $("html:lang(ar) input.form-control").attr("oninvalid", "this.setCustomValidity('إملأ هذا الحقل رجاءًا');"); // returning it to default after typing again
 

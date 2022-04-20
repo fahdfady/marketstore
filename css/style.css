@@ -1107,7 +1107,7 @@ a.dropdown-toggle * {
 }
 
 .card input.btn {
-  border: none;
+  border: none !important;
 }
 
 .card .addtocart,
@@ -1228,6 +1228,30 @@ html:lang(ar) .card.card-min a.btn-report {
   z-index: 999999;
 }
 
+#product .modal {
+  display: block;
+  opacity: 1;
+  position: static;
+  font-size: 16px;
+}
+
+#product .modal .swiper.infoSlider {
+  max-width: 550px;
+  max-height: 100%;
+}
+
+#product .modal .modal-body {
+  padding: 0px;
+}
+
+#product .modal .modal-body > * {
+  margin: 8px 0px !important;
+}
+
+#product .modal .card.buttons {
+  width: 50%;
+}
+
 .modal .modal-dialog {
   max-width: 60%;
   margin: auto;
@@ -1235,6 +1259,10 @@ html:lang(ar) .card.card-min a.btn-report {
 
 .modal .btn {
   margin: unset;
+}
+
+.modal .modal-info > * {
+  margin: 10px 0px !important;
 }
 
 .modal .modal-body hr {
@@ -1265,23 +1293,23 @@ html:lang(ar) .card.card-min a.btn-report {
           justify-content: space-between;
 }
 
-.modal .modal-body .modal-info {
+.modal .modal-info {
   width: 40%;
 }
 
-.modal .modal-body .modal-info ul {
+.modal .modal-info ul {
   list-style: disc;
   padding: 0px;
   direction: rtl;
 }
 
-.modal .modal-body .modal-info ul li {
+.modal .modal-info ul li {
   margin: 30px 0px;
   padding: 0px;
   display: list-item !important;
 }
 
-.modal .modal-body .modal-info ul li > * {
+.modal .modal-info ul li > * {
   margin: 10px 0px;
 }
 
@@ -1299,6 +1327,7 @@ html:lang(ar) .card.card-min a.btn-report {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 5px;
   padding: 0px 40px;
 }
 
@@ -1334,28 +1363,28 @@ html:lang(ar) .card.card-min a.btn-report {
           user-select: none;
 }
 
-.modal#modalRate hr {
+.modal.modalRate hr {
   margin: 5px 0px !important;
 }
 
-.modal#modalRate ::-webkit-scrollbar {
+.modal.modalRate ::-webkit-scrollbar {
   width: 1em;
   border-radius: inherit;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
 }
 
-.modal#modalRate ::-webkit-scrollbar-track {
+.modal.modalRate ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(27, 0, 21, 0.719);
           box-shadow: inset 0 0 6px rgba(27, 0, 21, 0.719);
 }
 
-.modal#modalRate ::-webkit-scrollbar-thumb {
+.modal.modalRate ::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
 
-.modal#modalRate .modal-dialog {
+.modal.modalRate .modal-dialog {
   height: 100%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -1368,12 +1397,12 @@ html:lang(ar) .card.card-min a.btn-report {
           align-items: center !important;
 }
 
-.modal#modalRate .modal-content {
+.modal.modalRate .modal-content {
   max-height: 75%;
   overflow-y: scroll;
 }
 
-.modal#modalRate .modal-info {
+.modal.modalRate .modal-info {
   width: 100%;
   direction: rtl;
   display: -webkit-box;
@@ -1391,14 +1420,14 @@ html:lang(ar) .card.card-min a.btn-report {
           align-items: flex-start;
 }
 
-.modal#modalRate .modal-ribbon {
+.modal.modalRate .modal-ribbon {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: unset !important;
 }
 
-.modal#modalRate .modal-ribbon .rating-ribbon {
+.modal.modalRate .modal-ribbon .rating-ribbon {
   font-weight: 200;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1408,7 +1437,7 @@ html:lang(ar) .card.card-min a.btn-report {
   white-space: nowrap;
 }
 
-.modal#modalRate .user {
+.modal.modalRate .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1418,12 +1447,12 @@ html:lang(ar) .card.card-min a.btn-report {
   width: 60%;
 }
 
-.modal#modalRate .user img {
+.modal.modalRate .user img {
   width: 80px;
   height: unset;
 }
 
-.modal#modalRate .user .text-right {
+.modal.modalRate .user .text-right {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1433,16 +1462,16 @@ html:lang(ar) .card.card-min a.btn-report {
           align-items: flex-start;
 }
 
-.modal#modalRate .user .text-right .name {
+.modal.modalRate .user .text-right .name {
   font-size: 18px;
   font-weight: 900;
 }
 
-.modal#modalRate .user .text-right .date {
+.modal.modalRate .user .text-right .date {
   color: #767676;
 }
 
-.modal#modalRate .user .text-right * {
+.modal.modalRate .user .text-right * {
   margin: 3px 0px;
   padding: 0px;
 }
@@ -2614,12 +2643,12 @@ footer.page-footer .copyrights {
 }
 
 @media (max-width: 768px) {
-  .modal#modalRate .user {
+  .modal.modalRate .user {
     width: unset;
     font-size: 12px;
     padding: 3px;
   }
-  .modal#modalRate .modal-ribbon h5 {
+  .modal.modalRate .modal-ribbon h5 {
     font-size: 18px;
   }
   .modal .modal-dialog {

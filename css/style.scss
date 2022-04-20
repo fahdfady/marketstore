@@ -1005,7 +1005,7 @@ a.dropdown-toggle * {
 
     input {
         &.btn {
-            border: none;
+            border: none !important;
         }
     }
 
@@ -1107,6 +1107,30 @@ a.dropdown-toggle * {
 .modal {
     z-index: 999999;
 
+    #product & {
+        display: block;
+        opacity: 1;
+        position: static;
+        font-size: 16px;
+
+        .swiper.infoSlider {
+            max-width: 550px;
+            max-height: 100%
+        }
+
+        .modal-body {
+            padding: 0px;
+
+            >* {
+                margin: 8px 0px !important;
+            }
+        }
+
+        .card.buttons {
+            width: 50%;
+        }
+    }
+
     .modal-dialog {
         max-width: 60%;
         margin: auto;
@@ -1114,6 +1138,14 @@ a.dropdown-toggle * {
 
     .btn {
         margin: unset
+    }
+
+    .modal-info {
+        // width: 100%;
+
+        >* {
+            margin: 10px 0px !important;
+        }
     }
 
     .modal-body {
@@ -1141,24 +1173,25 @@ a.dropdown-toggle * {
             justify-content: space-between;
         }
 
-        .modal-info {
-            width: 40%;
+    }
 
-            ul {
-                list-style: disc;
+    .modal-info {
+        width: 40%;
+
+        ul {
+            list-style: disc;
+            padding: 0px;
+            direction: rtl;
+
+            li {
+                margin: 30px 0px;
                 padding: 0px;
-                direction: rtl;
+                display: list-item !important;
 
-                li {
-                    margin: 30px 0px;
-                    padding: 0px;
-                    display: list-item !important;
-
-                    >* {
-                        margin: 10px 0px;
-                    }
-
+                >* {
+                    margin: 10px 0px;
                 }
+
             }
         }
     }
@@ -1168,6 +1201,7 @@ a.dropdown-toggle * {
         justify-content: center;
         flex-direction: row;
         align-items: center;
+        gap: 5px;
         padding: 0px 40px;
 
         p {
@@ -1198,7 +1232,7 @@ a.dropdown-toggle * {
         user-select: none;
     }
 
-    &#modalRate {
+    &.modalRate {
         hr {
             margin: 5px 0px !important;
         }
@@ -2465,7 +2499,7 @@ footer.page-footer {
 @media (max-width:768px) {
 
     .modal {
-        &#modalRate {
+        &.modalRate {
             .user {
                 width: unset;
                 font-size: 12px;
