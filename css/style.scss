@@ -1075,7 +1075,7 @@ a.dropdown-toggle * {
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                width: fit-content;
+                min-width: fit-content;
                 font-size: 18px;
                 font-weight: 700;
                 transition: 0.2s all linear;

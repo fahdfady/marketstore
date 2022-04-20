@@ -1189,9 +1189,9 @@ a.dropdown-toggle * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   font-size: 18px;
   font-weight: 700;
   -webkit-transition: 0.2s all linear;
