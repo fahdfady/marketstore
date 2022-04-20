@@ -934,33 +934,6 @@ a.dropdown-toggle * {
   padding: 0px 18px;
 }
 
-.page-body .price-filter {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  /* Special styling for WebKit/Blink */
-  margin-bottom: 16px;
-}
-
-.page-body .price-filter .form-range {
-  width: 100%;
-  height: 8.4px;
-  -webkit-box-shadow: #686868cc 0px 3px 5px, 0px 0px 1px #0d0d0d;
-          box-shadow: #686868cc 0px 3px 5px, 0px 0px 1px #0d0d0d;
-  background: var(--btnBackground);
-  border-radius: 1.3px;
-  border: 0.1px solid #01010163;
-}
-
-.page-body .price-filter label.form-label {
-  font-family: 'Aclonica';
-}
-
 .card-container {
   padding: 8px 4px 0px 4px;
 }
@@ -1497,6 +1470,55 @@ html:lang(ar) .card.card-min a.btn-report {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+}
+
+.two-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.two-inputs > * {
+  width: calc(50% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filters {
+  direction: rtl;
+}
+
+.filters .search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(60% - 10px);
+}
+
+.filters .price-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(40% - 10px);
+}
+
+.filters .price-filter select {
+  padding: 10px;
 }
 
 .row {
