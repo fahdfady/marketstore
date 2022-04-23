@@ -1092,7 +1092,7 @@ a.dropdown-toggle * {
         position: static;
         font-size: 16px;
 
-        .swiper.infoSlider {
+        .swiper {
             max-width: 550px;
             max-height: 100%
         }
@@ -1127,6 +1127,13 @@ a.dropdown-toggle * {
         }
     }
 
+    .modal-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: start;
+    }
+
     .modal-body {
         hr {
             width: 75%;
@@ -1152,6 +1159,10 @@ a.dropdown-toggle * {
             justify-content: space-between;
         }
 
+    }
+
+    .swiper {
+        width: 60%;
     }
 
     .modal-info {
@@ -1338,21 +1349,36 @@ a.dropdown-toggle * {
 }
 
 .filters {
-    direction: rtl;
+
+    html:lang(ar) & {
+        direction: rtl;
+    }
+
+    .search-container,
+    .price-filter {
+
+        height: 60px;
+
+        .search-text,
+        .price-text {
+            height: 100%;
+            border: 1px solid #cbc8d0;
+        }
+    }
 
     .search-container {
         display: flex;
-        width: calc(60% - 10px);
+        width: 80%;
     }
 
     .price-filter {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-        width: calc(40% - 10px);
+        width: 20%;
 
-        select {
-            padding: 10px;
+        .price-text {
+            width: 50%;
+            padding: 8px 4px;
         }
     }
 }
@@ -2510,6 +2536,22 @@ footer.page-footer {
 @media (max-width:768px) {
 
     .modal {
+
+        #product & {
+            .modal-body {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .modal-info {
+                width: 100%;
+            }
+
+            .swiper {
+                width: 80%;
+            }
+        }
+
         &.modalRate {
             .user {
                 width: unset;
@@ -2579,7 +2621,7 @@ footer.page-footer {
             }
         }
 
-        .swiper.infoSlider {
+        .swiper {
             display: block;
             max-width: 100%;
             max-height: 100%;
@@ -2587,7 +2629,7 @@ footer.page-footer {
         }
 
         .ribbon {
-            width: 40%;
+            width: 60%;
         }
 
         table {

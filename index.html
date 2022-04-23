@@ -47,7 +47,14 @@
                         وصف المنتج
 
                     </h5>
+
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
+                    <h5 class="modal-title">
+
+                        حساب عشوائي السيزون الثانى
+
+                    </h5>
                 </div>
                 <div class="info-modal">
                     <div class="modal-body">
@@ -472,51 +479,19 @@
                         <div class="filters container two-inputs">
 
                             <form class="search-container">
-                                <div class="input-group">
-                                    <input type="text" class="form-control sreach_bar" id="search"
-                                        placeholder="ابحث عن ما تريده"
-                                        oninvalid="this.setCustomValidity('إملأ هذا الحقل رجاءًا');"
-                                        onchange="this.setCustomValidity('');">
-                                </div>
+                                <input type="text" class="form-control" id="search" placeholder="ابحث عن ما تريده">
                             </form>
                             <div class="price-filter">
-                                <select class="price-select" required>
 
-                                    <option disabled selected>
-                                        الميزانية (من)
-                                    </option>
+                                <input type="number" class="price-text" placeholder=" الميزانية (من)" min="0" step="50">
 
-                                    <option>
-                                        100
-                                    </option>
-                                    <option>
-                                        200
-                                    </option>
-                                    <option>
-                                        300
-                                    </option>
-                                </select>
+                                <input type="number" class="price-text" placeholder=" الميزانية (إلى)" min="0" step="50">
 
-                                <select class="price-select" required>
-
-                                    <option disabled selected>
-                                        الميزانية (إلى)
-                                    </option>
-
-                                    <option>
-                                        100
-                                    </option>
-                                    <option>
-                                        200
-                                    </option>
-                                    <option>
-                                        300
-                                    </option>
-                                </select>
                             </div>
                         </div>
 
                         <!-- END Update -->
+
                     </nav>
                 </section>
 
