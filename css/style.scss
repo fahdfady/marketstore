@@ -1090,7 +1090,15 @@ a.dropdown-toggle * {
         display: block;
         opacity: 1;
         position: static;
+        overflow: unset;
         font-size: 16px;
+        height: auto;
+
+        .product-title {
+            text-align: center;
+            margin: 18px;
+            font-size: 28px;
+        }
 
         .swiper {
             max-width: 550px;
@@ -2407,6 +2415,15 @@ footer.page-footer {
         }
     }
 
+    .filters {
+        .search-container {
+            width: 70%;
+        }
+
+        .price-filter {
+            width: 30%;
+        }
+    }
 }
 
 @media(max-width:991px) {
@@ -2529,6 +2546,16 @@ footer.page-footer {
             .page-body#login & {
                 padding: 5px;
             }
+        }
+    }
+
+    .filters {
+        .search-container {
+            width: 65%;
+        }
+
+        .price-filter {
+            width: 35%;
         }
     }
 }
@@ -2729,6 +2756,15 @@ footer.page-footer {
         }
     }
 
+    .filters {
+        .search-container {
+            width: 60%;
+        }
+
+        .price-filter {
+            width: 40%;
+        }
+    }
 }
 
 @media(max-width:600px) {
@@ -2843,6 +2879,22 @@ footer.page-footer {
             }
         }
     }
+
+    .filters {
+        font-size: 14px;
+
+        .search-container {
+            width: 60%;
+        }
+
+        .price-filter {
+            width: 40%;
+
+            .price-text {
+                padding: 4px 2px;
+            }
+        }
+    }
 }
 
 @media (max-width:500px) {
@@ -2944,6 +2996,15 @@ footer.page-footer {
         }
     }
 
+    .filters {
+        .search-container {
+            width: 55%;
+        }
+
+        .price-filter {
+            width: 45%;
+        }
+    }
 
 }
 
@@ -3132,6 +3193,18 @@ footer.page-footer {
             font-size: 14px;
         }
     }
+
+    .filters {
+        font-size: 12px;
+
+        .search-container {
+            width: 50%;
+        }
+
+        .price-filter {
+            width: 50%;
+        }
+    }
 }
 
 @media(max-width:350px) {
@@ -3170,12 +3243,13 @@ footer.page-footer {
     }
 
     .modal {
+        .ribbon {
+            width: 100%;
+            font-size: 14px;
+        }
+
         .modal-dialog {
             .modal-body {
-                .ribbon {
-                    width: 100%;
-                    font-size: 14px;
-                }
 
                 .modal-info {
                     width: 100%;
@@ -3206,10 +3280,6 @@ footer.page-footer {
         .swiper.infoSlider {
             max-width: 100%;
             max-height: 100%;
-        }
-
-        .ribbon {
-            width: 40%;
         }
 
         .input-group {
@@ -3249,6 +3319,7 @@ footer.page-footer {
             }
         }
     }
+
 }
 
 @media(max-width:300px) {

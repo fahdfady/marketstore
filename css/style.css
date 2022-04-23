@@ -1205,7 +1205,15 @@ html:lang(ar) .card.card-min a.btn-report {
   display: block;
   opacity: 1;
   position: static;
+  overflow: unset;
   font-size: 16px;
+  height: auto;
+}
+
+#product .modal .product-title {
+  text-align: center;
+  margin: 18px;
+  font-size: 28px;
 }
 
 #product .modal .swiper {
@@ -2611,6 +2619,12 @@ footer.page-footer .copyrights {
   body .page-body.simple-page form {
     width: 80%;
   }
+  .filters .search-container {
+    width: 70%;
+  }
+  .filters .price-filter {
+    width: 30%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2690,6 +2704,12 @@ footer.page-footer .copyrights {
   }
   .page-body#login form .form-control {
     padding: 5px;
+  }
+  .filters .search-container {
+    width: 65%;
+  }
+  .filters .price-filter {
+    width: 35%;
   }
 }
 
@@ -2866,6 +2886,12 @@ footer.page-footer .copyrights {
   .btn-group-vertical > .btn-group.card_footer > .details {
     width: 100% !important;
   }
+  .filters .search-container {
+    width: 60%;
+  }
+  .filters .price-filter {
+    width: 40%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2938,6 +2964,18 @@ footer.page-footer .copyrights {
   .card.card-min .heading .card-title h5 {
     font-size: 18px;
   }
+  .filters {
+    font-size: 14px;
+  }
+  .filters .search-container {
+    width: 60%;
+  }
+  .filters .price-filter {
+    width: 40%;
+  }
+  .filters .price-filter .price-text {
+    padding: 4px 2px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2990,6 +3028,12 @@ footer.page-footer .copyrights {
   }
   form .form-control {
     font-size: 14px;
+  }
+  .filters .search-container {
+    width: 55%;
+  }
+  .filters .price-filter {
+    width: 45%;
   }
 }
 
@@ -3107,6 +3151,15 @@ footer.page-footer .copyrights {
   .card .ra span.readrating {
     font-size: 14px;
   }
+  .filters {
+    font-size: 12px;
+  }
+  .filters .search-container {
+    width: 50%;
+  }
+  .filters .price-filter {
+    width: 50%;
+  }
 }
 
 @media (max-width: 350px) {
@@ -3138,7 +3191,7 @@ footer.page-footer .copyrights {
     /* border-top: none; */
     margin: auto;
   }
-  .modal .modal-dialog .modal-body .ribbon {
+  .modal .ribbon {
     width: 100%;
     font-size: 14px;
   }
@@ -3161,9 +3214,6 @@ footer.page-footer .copyrights {
   .modal .swiper.infoSlider {
     max-width: 100%;
     max-height: 100%;
-  }
-  .modal .ribbon {
-    width: 40%;
   }
   .modal .input-group .input-group-text {
     font-size: 12px;
