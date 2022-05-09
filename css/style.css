@@ -954,7 +954,7 @@ a.dropdown-toggle * {
 
 .card .card-body {
   /* min-height: 300px; */
-  padding: 0px;
+  padding: 2px 0px;
   padding-top: 1rem;
 }
 
@@ -1131,6 +1131,8 @@ a.dropdown-toggle * {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
 }
 
 .card.card-min .store-title {
@@ -1447,8 +1449,12 @@ html:lang(ar) .card.card-min a.btn-report {
 }
 
 .modal.modalRate .user img {
-  width: 80px;
-  height: unset;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  padding: 2px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .modal.modalRate .user .text-right {
@@ -1524,27 +1530,27 @@ html:lang(ar) .filters {
   direction: rtl;
 }
 
-.filters .search-container,
-.filters .price-filter {
+.search-container,
+.price-filter {
   height: 60px;
 }
 
-.filters .search-container .search-text,
-.filters .search-container .price-text,
-.filters .price-filter .search-text,
-.filters .price-filter .price-text {
+.search-container .search-text,
+.search-container .price-text,
+.price-filter .search-text,
+.price-filter .price-text {
   height: 100%;
   border: 1px solid #cbc8d0;
 }
 
-.filters .search-container {
+.search-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 80%;
 }
 
-.filters .price-filter {
+.price-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1553,7 +1559,7 @@ html:lang(ar) .filters {
   width: 20%;
 }
 
-.filters .price-filter .price-text {
+.price-filter .price-text {
   width: 50%;
   padding: 8px 4px;
 }

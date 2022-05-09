@@ -883,7 +883,7 @@ a.dropdown-toggle * {
 
     .card-body {
         /* min-height: 300px; */
-        padding: 0px;
+        padding: 2px 0px;
         padding-top: 1rem;
     }
 
@@ -1026,6 +1026,7 @@ a.dropdown-toggle * {
         .card-title {
             text-align: right;
             display: inline-flex;
+            margin-inline-start: auto;
         }
 
         .store-title {
@@ -1289,8 +1290,11 @@ a.dropdown-toggle * {
             width: 60%;
 
             img {
-                width: 80px;
-                height: unset;
+                width: 90px;
+                height: 90px;
+                border-radius: 100%;
+                padding: 2px;
+                object-fit: cover;
             }
 
             .text-right {
@@ -1357,37 +1361,36 @@ a.dropdown-toggle * {
 }
 
 .filters {
-
     html:lang(ar) & {
         direction: rtl;
     }
+}
 
-    .search-container,
-    .price-filter {
+.search-container,
+.price-filter {
 
-        height: 60px;
+    height: 60px;
 
-        .search-text,
-        .price-text {
-            height: 100%;
-            border: 1px solid #cbc8d0;
-        }
+    .search-text,
+    .price-text {
+        height: 100%;
+        border: 1px solid #cbc8d0;
     }
+}
 
-    .search-container {
-        display: flex;
-        width: 80%;
-    }
+.search-container {
+    display: flex;
+    width: 80%;
+}
 
-    .price-filter {
-        display: flex;
-        flex-wrap: wrap;
-        width: 20%;
+.price-filter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
 
-        .price-text {
-            width: 50%;
-            padding: 8px 4px;
-        }
+    .price-text {
+        width: 50%;
+        padding: 8px 4px;
     }
 }
 
