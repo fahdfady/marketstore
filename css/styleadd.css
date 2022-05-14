@@ -67,22 +67,6 @@ nav.sidenav .list-inline-item:last-child {
 /* nav END */
 /* Body START */
 
-#home .banner {
-    background: url(../img/banners/banner4.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: auto;
-}
-
-#login .banner {
-    background: url(../img/banners/banner2.jpg);
-    background-position: 0px -190px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 .mouseScroll .botn {
     height: 50px;
     width: 30px;

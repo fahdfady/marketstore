@@ -208,7 +208,6 @@ body {
         &#home {
             .banner {
                 height: 85vh;
-                background-image: url(../img/banners/banner4.jpg);
             }
         }
 
@@ -831,6 +830,17 @@ a.dropdown-toggle * {
         background-attachment: auto;
         @include centerAll();
 
+        .banner-img {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
         .layer {
             width: 100%;
             height: 100%;
@@ -1361,8 +1371,19 @@ a.dropdown-toggle * {
 }
 
 .filters {
+    flex-wrap: wrap;
+
     html:lang(ar) & {
         direction: rtl;
+    }
+
+    .filter-submit {
+        width: 100%;
+        background: var(--btnBackground);
+        color: #fff;
+        padding: 12px;
+        border-radius: 0px 0px 10px 10px;
+        border: 0px;
     }
 }
 

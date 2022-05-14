@@ -195,7 +195,6 @@ body {
 
 body .page-body#home .banner {
   height: 85vh;
-  background-image: url(../img/banners/banner4.jpg);
 }
 
 body .page-body#login .banner {
@@ -892,6 +891,18 @@ a.dropdown-toggle * {
           align-items: center !important;
 }
 
+.page-body .banner .banner-img {
+  width: 100%;
+  height: 100%;
+}
+
+.page-body .banner .banner-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .page-body .banner .layer {
   width: 100%;
   height: 100%;
@@ -1526,8 +1537,22 @@ html:lang(ar) .card.card-min a.btn-report {
           align-items: center;
 }
 
+.filters {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 html:lang(ar) .filters {
   direction: rtl;
+}
+
+.filters .filter-submit {
+  width: 100%;
+  background: var(--btnBackground);
+  color: #fff;
+  padding: 12px;
+  border-radius: 0px 0px 10px 10px;
+  border: 0px;
 }
 
 .search-container,

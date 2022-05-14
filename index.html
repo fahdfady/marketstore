@@ -37,7 +37,7 @@
 </head>
 
 <body>
-    <!-- START update -->
+
     <div class="modal modalInfo" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -307,7 +307,7 @@
             </div>
         </div>
     </div>
-    <!-- END update -->
+
 
     <div class="page-container">
 
@@ -432,6 +432,9 @@
 
             <div class="page-body" id="home">
                 <section class="banner">
+                    <div class="banner-img">
+                        <img src="img/banners/banner4.jpg">
+                    </div>
                     <div class="layer">
 
                         <h1>
@@ -447,7 +450,7 @@
                     </div>
                 </section>
 
-                <!-- START Update -->
+                        <!-- START update -->
 
                 <section class="navigation-platforms">
                     <nav>
@@ -481,11 +484,11 @@
                         </div>
 
 
-                        <div class="filters container two-inputs">
+                        <form class="filters container two-inputs">
 
-                            <form class="search-container">
+                            <div class="search-container">
                                 <input type="text" class="form-control" id="search" placeholder="ابحث عن ما تريده">
-                            </form>
+                            </div>
                             <div class="price-filter">
 
                                 <input type="number" class="price-text" placeholder=" الميزانية (من)" min="0" step="50">
@@ -494,12 +497,13 @@
                                     step="50">
 
                             </div>
-                        </div>
 
+                            <input type="submit" class="filter-submit" value="بحث">
+                        </form>
                     </nav>
                 </section>
 
-                <!-- END Update -->
+                        <!-- END update -->
 
                 <section class="tab-content" id="nav-tabContent">
 
