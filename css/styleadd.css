@@ -64,7 +64,11 @@ nav.sidenav ul li * {
 nav.sidenav .list-inline-item:last-child {
     margin: 0px !important;
 }
+
+
 /* nav END */
+
+
 /* Body START */
 
 .mouseScroll .botn {
@@ -98,10 +102,6 @@ nav.sidenav .list-inline-item:last-child {
     top: 30%;
     animation-delay: 0.3s;
     /* animation: scroll-down 1s ease-in-out infinite; */
-}
-
-.page-body {
-    /* padding: 10px; */
 }
 
 .page-body .nav {
@@ -142,22 +142,6 @@ button.btn.input-group-text:hover {
     padding-top: 0px;
 }
 
-.section-container.row {
-
-}
-
-.section-header {}
-
-.section-header:before {}
-
-.section-header {}
-
-.card {}
-
-.image {}
-
-.image img {}
-
 .image .layer {
     display: flex;
     position: absolute;
@@ -182,18 +166,6 @@ button.btn.input-group-text:hover {
     font-size: 3.125rem;
     cursor: pointer;
 }
-
-.image:hover .layer {}
-
-.wish i,
-.wishlabel {}
-
-.wish i.clicked,
-.wish label.clicked {}
-
-.cardcontainer {}
-
-.ribbon {}
 
 .ribbon:after {
     content: '';
@@ -222,8 +194,6 @@ button.btn.input-group-text:hover {
     border-color: transparent transparent transparent #ad859f;
 }
 
-.card-title {}
-
 .card .btn-group.card_footer {
     width: 100%;
     text-align: center;
@@ -235,14 +205,6 @@ button.btn.input-group-text:hover {
     left: 0;
     margin-top: 2.5rem;
 }
-
-.card .btn-group.card_footer .price-t {
-    width: 37%;
-    font-family: 'kelly slab', sans-serif;
-    letter-spacing: 0.6px;
-}
-
-.card .btn {}
 
 .card .btn,
 .card .outofstock {
@@ -278,30 +240,6 @@ button.btn.input-group-text:hover {
     pointer-events: none;
 }
 
-.card .btn i {}
-
-.card .details {}
-
-.card .btn input {}
-
-.outofstock {}
-
-.card .btn:hover {}
-
-.card .btn:hover>* {}
-
-.outofstock {}
-
-.card .btn i {}
-
-.card .btn:hover>i {}
-
-.platforms {}
-
-.platforms h5 {}
-
-.platforms i {}
-
 .modal .modal-body {
     position: relative;
     flex: 1 1 auto;
@@ -325,6 +263,8 @@ button.btn.input-group-text:hover {
     margin: 0px;
     border-top: none;
 }
+
+
 /* Swiperjs  START */
 
 .slider-container {
@@ -355,10 +295,6 @@ button.btn.input-group-text:hover {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-}
-
-.infoSlider .swiper-slide {
-    /* width: 100% !important; */
 }
 
 .infoSlider .swiper-slide {
@@ -493,7 +429,7 @@ button.btn.input-group-text:hover {
 .review .user {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 5px;
+    padding: 10px;
 }
 
 .text-right {
@@ -515,6 +451,8 @@ ul.rating li {
 .reviewSlider .swiper-pagination-bullet-active {
     background: #e9cfe4;
 }
+
+
 /* Swiperjs END */
 
 .choose {
@@ -583,7 +521,11 @@ ul.rating li {
     font-size: 15px;
     color: #777;
 }
+
+
 /* Body END */
+
+
 /* footer START */
 
 footer.page-footer {
@@ -643,7 +585,11 @@ footer .email {
     user-select: text;
     padding-top: 10px;
 }
+
+
 /* footer END */
+
+
 /* Login START */
 
 .login-container {
@@ -825,7 +771,11 @@ div#error.alert-danger {
 .checkbox label a {
     color: #593196;
 }
+
+
 /* Login END */
+
+
 /* Checkout START */
 
 .step:nth-child(2) {
@@ -867,6 +817,8 @@ div#error.alert-danger {
     background-color: #d169f2;
     border-color: #d169f2;
 }
+
+
 /* empty checkout */
 
 .emptyicon {
@@ -911,6 +863,8 @@ div#error.alert-danger {
     font-weight: 900;
     margin: 2px 6px;
 }
+
+
 /* empty checkout */
 
 .py-5 {
@@ -931,7 +885,11 @@ div#error.alert-danger {
 .disabled-payment {
     cursor: not-allowed;
 }
+
+
 /* Checkout END */
+
+
 /* DMCA START */
 
 input,
@@ -944,7 +902,11 @@ textarea {
     left: unset;
     right: 0;
 }
+
+
 /* DMCA END */
+
+
 /* license START */
 
 ul.license {
@@ -961,7 +923,11 @@ ul.license li {
 ul.license li::marker {
     font-size: 20px;
 }
+
+
 /* license END */
+
+
 /* underM START */
 
 i.fas.fa-robot {
@@ -969,16 +935,22 @@ i.fas.fa-robot {
     font-size: 130px;
     margin: 27px 0px;
 }
+
+
 /* underM END */
 
 textarea#floatingReview {
     min-height: 10rem;
 }
+
+
 /* test */
 
 .rating {
     float: left;
 }
+
+
 /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
 follow these rules. Every browser that supports :checked also supports :not(), so
 it doesn’t make the test unnecessarily selective */
@@ -1039,8 +1011,14 @@ it doesn’t make the test unnecessarily selective */
 .ra span.readrating {
     font-size: 23px;
 }
+
+
 /* test */
+
+
 /* user profile START */
+
+
 /* .user {
 margin-top: 10%;
 display: flex;
@@ -1050,7 +1028,6 @@ flex-direction: column;
 text-align: center;
 }
 */
-
 
 .user .userName {
     font-size: 36px;
@@ -1062,6 +1039,8 @@ text-align: center;
 #settings input.btn.button {
     margin: auto;
 }
+
+
 /* .joined-since.text-muted {
 font-size: 14px;
 }
@@ -1322,6 +1301,8 @@ input[type=number].product-count::-webkit-outer-spin-button {
     display: flex;
     justify-content: center;
 }
+
+
 /* user profile END */
 
 hr.minihr {
@@ -1330,6 +1311,8 @@ hr.minihr {
     width: 50%;
     margin: 15px auto;
 }
+
+
 /* animations START */
 
 @keyframes scroll-down {
@@ -1348,5 +1331,9 @@ hr.minihr {
         opacity: 0;
     }
 }
+
+
 /* animations END */
+
+
 /* Responsive START */
